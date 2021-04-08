@@ -35,3 +35,22 @@ The 2 icons used in the app are from:
 
 App logo is born from an idea at the end of the project I hope you'll like it!
 
+## Customizations
+
+In the info.plist file I have added the possibilty to customize your gameplay 
+
+### Game Variables
+
+- QUIZ_QUESTIONS (default 10): Determines the amount of questions for each quiz
+- QUIZ_TIMER (default 12): Determines the amount of time a player has to answer a question
+
+### Track Filters
+
+- CHART_COUNTRY (default "us"): Determines the chart country
+- CHART_NAME (default "top"): Determines the type of chart, possible options:
+    + top : editorial chart
+    + hot : Most viewed lyrics in the last 2 hours
+    + mxmweekly : Most viewed lyrics in the last 7 days
+    + mxmweekly_new : Most viewed lyrics in the last 7 days limited to new releases
+
+# Have fun! 
