@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62220EC1261875A800388008 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62220EC0261875A800388008 /* AppDelegate.swift */; };
+		62220EC3261875A800388008 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62220EC2261875A800388008 /* SceneDelegate.swift */; };
+		62220EC5261875A800388008 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62220EC4261875A800388008 /* ViewController.swift */; };
+		62220ECA261875AC00388008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62220EC9261875AC00388008 /* Assets.xcassets */; };
+		6223319B261882EF007344D9 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6223319A261882EF007344D9 /* Track.swift */; };
+		6223319E261884A3007344D9 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6223319D261884A3007344D9 /* Artist.swift */; };
+		622331A1261884B8007344D9 /* Lyric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622331A0261884B8007344D9 /* Lyric.swift */; };
+		622331AE261A3873007344D9 /* QuizCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622331AD261A3873007344D9 /* QuizCardVC.swift */; };
+		622331B8261A67F4007344D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 622331B7261A67F4007344D9 /* LaunchScreen.storyboard */; };
+		622331BD261B4D58007344D9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622331BC261B4D58007344D9 /* Utils.swift */; };
+		62A69CEA261DBE75004AFA8C /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A69CE9261DBE75004AFA8C /* Score.swift */; };
+		62A69D01261DECB2004AFA8C /* HighScoresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A69D00261DECB2004AFA8C /* HighScoresVC.swift */; };
+		62A69D0C261DF08E004AFA8C /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A69D0B261DF08E004AFA8C /* ProfileVC.swift */; };
+		62CD7863261C563C00D5EBE3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CD7862261C563C00D5EBE3 /* HomeVC.swift */; };
+		62CD787A261DA71800D5EBE3 /* QuizEndVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CD7879261DA71800D5EBE3 /* QuizEndVC.swift */; };
+		62CFA0F026187A8000A19F12 /* WhoSingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CFA0EF26187A8000A19F12 /* WhoSingsManager.swift */; };
+		F906D614745E2E3D25D8DAC9 /* Pods_WhoSings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CDCDBF7C79DE68365E961D /* Pods_WhoSings.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		62220EBD261875A800388008 /* WhoSings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhoSings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62220EC0261875A800388008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		62220EC2261875A800388008 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		62220EC4261875A800388008 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		62220EC9261875AC00388008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62220ECE261875AC00388008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6223319A261882EF007344D9 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		6223319D261884A3007344D9 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		622331A0261884B8007344D9 /* Lyric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lyric.swift; sourceTree = "<group>"; };
+		622331AD261A3873007344D9 /* QuizCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCardVC.swift; sourceTree = "<group>"; };
+		622331B7261A67F4007344D9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		622331BC261B4D58007344D9 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		62A69CE9261DBE75004AFA8C /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		62A69D00261DECB2004AFA8C /* HighScoresVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoresVC.swift; sourceTree = "<group>"; };
+		62A69D0B261DF08E004AFA8C /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		62CD7862261C563C00D5EBE3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		62CD7879261DA71800D5EBE3 /* QuizEndVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizEndVC.swift; sourceTree = "<group>"; };
+		62CFA0EF26187A8000A19F12 /* WhoSingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoSingsManager.swift; sourceTree = "<group>"; };
+		86CDCDBF7C79DE68365E961D /* Pods_WhoSings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhoSings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66F2101F293529D3CCCE0BF /* Pods-WhoSings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoSings.debug.xcconfig"; path = "Target Support Files/Pods-WhoSings/Pods-WhoSings.debug.xcconfig"; sourceTree = "<group>"; };
+		FD3AAD96D04A3BD7A4855FB4 /* Pods-WhoSings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoSings.release.xcconfig"; path = "Target Support Files/Pods-WhoSings/Pods-WhoSings.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62220EBA261875A800388008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F906D614745E2E3D25D8DAC9 /* Pods_WhoSings.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62220EB4261875A800388008 = {
+			isa = PBXGroup;
+			children = (
+				62220EBF261875A800388008 /* WhoSings */,
+				62220EBE261875A800388008 /* Products */,
+				62CDA57514E13244B91E9F7E /* Pods */,
+				F8FDF809B5CF7653C7C14DEC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		62220EBE261875A800388008 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62220EBD261875A800388008 /* WhoSings.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62220EBF261875A800388008 /* WhoSings */ = {
+			isa = PBXGroup;
+			children = (
+				62CFA0F426187AA800A19F12 /* Core */,
+				62CFA0F326187A8F00A19F12 /* Utils */,
+				6223319526188228007344D9 /* Models */,
+				62CD7861261C562700D5EBE3 /* Views */,
+			);
+			path = WhoSings;
+			sourceTree = "<group>";
+		};
+		6223319526188228007344D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62A69CE9261DBE75004AFA8C /* Score.swift */,
+				6223319A261882EF007344D9 /* Track.swift */,
+				6223319D261884A3007344D9 /* Artist.swift */,
+				622331A0261884B8007344D9 /* Lyric.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		62CD7861261C562700D5EBE3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				62CD7862261C563C00D5EBE3 /* HomeVC.swift */,
+				62CFA0EC2618798100A19F12 /* Quiz */,
+				62A69D0B261DF08E004AFA8C /* ProfileVC.swift */,
+				62A69D00261DECB2004AFA8C /* HighScoresVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		62CDA57514E13244B91E9F7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D66F2101F293529D3CCCE0BF /* Pods-WhoSings.debug.xcconfig */,
+				FD3AAD96D04A3BD7A4855FB4 /* Pods-WhoSings.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		62CFA0EC2618798100A19F12 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				622331AD261A3873007344D9 /* QuizCardVC.swift */,
+				62CD7879261DA71800D5EBE3 /* QuizEndVC.swift */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		62CFA0F326187A8F00A19F12 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				62CFA0EF26187A8000A19F12 /* WhoSingsManager.swift */,
+				622331BC261B4D58007344D9 /* Utils.swift */,
+				62220ECE261875AC00388008 /* Info.plist */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		62CFA0F426187AA800A19F12 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				62220EC0261875A800388008 /* AppDelegate.swift */,
+				62220EC2261875A800388008 /* SceneDelegate.swift */,
+				622331B7261A67F4007344D9 /* LaunchScreen.storyboard */,
+				62220EC4261875A800388008 /* ViewController.swift */,
+				62220EC9261875AC00388008 /* Assets.xcassets */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F8FDF809B5CF7653C7C14DEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86CDCDBF7C79DE68365E961D /* Pods_WhoSings.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62220EBC261875A800388008 /* WhoSings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62220ED1261875AC00388008 /* Build configuration list for PBXNativeTarget "WhoSings" */;
+			buildPhases = (
+				82F0EC7823E8340C551AC9FE /* [CP] Check Pods Manifest.lock */,
+				62220EB9261875A800388008 /* Sources */,
+				62220EBA261875A800388008 /* Frameworks */,
+				62220EBB261875A800388008 /* Resources */,
+				724A283F0F788A82FCE94965 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhoSings;
+			productName = WhoSings;
+			productReference = 62220EBD261875A800388008 /* WhoSings.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62220EB5261875A800388008 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					62220EBC261875A800388008 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 62220EB8261875A800388008 /* Build configuration list for PBXProject "WhoSings" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62220EB4261875A800388008;
+			productRefGroup = 62220EBE261875A800388008 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62220EBC261875A800388008 /* WhoSings */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62220EBB261875A800388008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				622331B8261A67F4007344D9 /* LaunchScreen.storyboard in Resources */,
+				62220ECA261875AC00388008 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		724A283F0F788A82FCE94965 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhoSings/Pods-WhoSings-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhoSings/Pods-WhoSings-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhoSings/Pods-WhoSings-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82F0EC7823E8340C551AC9FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhoSings-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62220EB9261875A800388008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6223319E261884A3007344D9 /* Artist.swift in Sources */,
+				62CD7863261C563C00D5EBE3 /* HomeVC.swift in Sources */,
+				62A69D0C261DF08E004AFA8C /* ProfileVC.swift in Sources */,
+				62220EC5261875A800388008 /* ViewController.swift in Sources */,
+				62CD787A261DA71800D5EBE3 /* QuizEndVC.swift in Sources */,
+				622331BD261B4D58007344D9 /* Utils.swift in Sources */,
+				62A69D01261DECB2004AFA8C /* HighScoresVC.swift in Sources */,
+				622331A1261884B8007344D9 /* Lyric.swift in Sources */,
+				6223319B261882EF007344D9 /* Track.swift in Sources */,
+				62CFA0F026187A8000A19F12 /* WhoSingsManager.swift in Sources */,
+				62A69CEA261DBE75004AFA8C /* Score.swift in Sources */,
+				622331AE261A3873007344D9 /* QuizCardVC.swift in Sources */,
+				62220EC1261875A800388008 /* AppDelegate.swift in Sources */,
+				62220EC3261875A800388008 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		62220ECF261875AC00388008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		62220ED0261875AC00388008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62220ED2261875AC00388008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D66F2101F293529D3CCCE0BF /* Pods-WhoSings.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GUM66T75AL;
+				INFOPLIST_FILE = "$(SRCROOT)/WhoSings/Utils/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.jukemberg.WhoSings;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62220ED3261875AC00388008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD3AAD96D04A3BD7A4855FB4 /* Pods-WhoSings.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GUM66T75AL;
+				INFOPLIST_FILE = "$(SRCROOT)/WhoSings/Utils/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.jukemberg.WhoSings;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62220EB8261875A800388008 /* Build configuration list for PBXProject "WhoSings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62220ECF261875AC00388008 /* Debug */,
+				62220ED0261875AC00388008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62220ED1261875AC00388008 /* Build configuration list for PBXNativeTarget "WhoSings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62220ED2261875AC00388008 /* Debug */,
+				62220ED3261875AC00388008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62220EB5261875A800388008 /* Project object */;
+}

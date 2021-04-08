@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Who Sings Logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#FFFFFF" fill="#212123" fill-rule="nonzero" x="-127.5" y="-72.5" width="1999" height="2150.51515"></rect>
+        <g id="Who-Sings-Logo">
+            <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="1024" height="1024"></rect>
+            <text id="ngs" font-family="Avenir-Book, Avenir" font-size="220" font-weight="normal" fill="#FFFFFF">
+                <tspan x="560" y="706">ngs</tspan>
+            </text>
+            <text id="S" font-family="Avenir-Book, Avenir" font-size="220" font-weight="normal" fill="#FFFFFF">
+                <tspan x="332" y="703">S</tspan>
+            </text>
+            <text id="Wh" font-family="Avenir-Book, Avenir" font-size="220" font-weight="normal" fill="#FFFFFF">
+                <tspan x="101" y="461">Wh </tspan>
+            </text>
+            <g id="microphone" transform="translate(509.825693, 509.825693) rotate(-45.000000) translate(-509.825693, -509.825693) translate(358.389074, 358.389074)" fill="#FFFFFF">
+                <path d="M155.032134,134.785676 C146.837435,124.869972 125.446125,136.862175 122.002934,125.077867 L18.6898234,246.46526 C5.54524271,260.495435 -3.16098117,273.119045 10.432891,286.712917 L15.6289678,291.908994 C29.2234303,305.504637 40.3329381,295.323278 54.3837769,282.159214 L177.264903,180.339836 C165.480595,176.896645 177.471912,155.50445 167.556208,147.309751 L155.032134,134.785676 Z" id="Path"></path>
+                <path d="M167.511927,28.6767232 L273.671064,134.829956 C260.782715,145.04381 244.487781,151.142602 226.769991,151.142602 C185.034885,151.142602 151.19928,117.306997 151.19928,75.5718916 C151.19928,57.8546927 157.298073,41.5650717 167.511927,28.6767232 Z" id="Path"></path>
+                <path d="M302.340702,75.572482 C302.340702,93.2076158 296.295045,109.431703 286.175655,122.290532 L180.051942,16.1668185 C192.91077,6.04742805 209.134857,0.00177118853 226.769991,0.00177118853 C268.505097,0.00177118853 302.340702,33.8373762 302.340702,75.572482 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
