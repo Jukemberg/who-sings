@@ -1,7 +1,8 @@
 # WhoSings
 ![WhoSingsLogoSmall](https://user-images.githubusercontent.com/82147874/114013651-0c945300-9868-11eb-9b67-435ad95ec787.jpg)
 
-WhoSings is an iOS GameApp created for the Musixmatch iOS Test 
+WhoSings is an iOS GameApp created for the [Musixmatch iOS Test](https://github.com/Jukemberg/who-sings/files/6284018/Musixmatch.iOS-Test.pdf)
+
 
 ## Installation
 The only requirement to install the app is to use CocoaPods to install the 3 libraries I used.
