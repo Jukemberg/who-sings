@@ -41,7 +41,7 @@ class HighScoresVC: DarkVC {
     }
     
     private func createScoreSubViews(){
-        let highscores = WhoSingsManager.sharedInstance.getHighScores(quantity: HIGH_SCORES)
+        let highscores = getHighScores(quantity: HIGH_SCORES)
         if highscores.isEmpty {
             let subView = createSubLabel(for: nil)
             scoresStackView.addArrangedSubview(subView)

@@ -113,10 +113,24 @@ class QuizCardVC: DarkVC {
         answerCButton.rightAnchor.constraint(greaterThanOrEqualTo: guide.rightAnchor, constant: -16).isActive = true
     }
     
+    
+    
     private func loadTracks(){
-        WhoSingsManager.sharedInstance.getRandomTracks(with: QUIZ_QUESTIONS){ (tracks, error, code) in
-            self.track_list = tracks!
-            self.setupForCurrent()
+        getRandomTracks(with: QUIZ_QUESTIONS){ (tracks, error, code) in
+            if error != nil{
+                let alertController = getErrorWithRetryAlert(error: error?.localizedDescription, code: code) { (retry) in
+                    retry ? self.loadTracks() : self.backHome()
+                }
+                self.present(alertController, animated: true, completion: nil)
+            } else if ((tracks?.isEmpty) != nil) {
+                let alertController = getErrorWithRetryAlert(error: "Invalid track list", code: code) { (retry) in
+                    retry ? self.loadTracks() : self.backHome()
+                }
+                self.present(alertController, animated: true, completion: nil)
+            } else {
+                self.track_list = tracks!
+                self.setupForCurrent()
+            }
         }
     }
     
@@ -130,16 +144,40 @@ class QuizCardVC: DarkVC {
     }
     
     private func getCurrentLyric(){
-        WhoSingsManager.sharedInstance.getLyrics(for: self.current_track!.track!.track_id!){ (lyric, error, code) in
-            self.current_lyric = lyric
-            self.getCurrentAnswers()
+        getLyrics(for: self.current_track!.track!.track_id!){ (lyric, error, code) in
+            if error != nil{
+                let alertController = getErrorWithRetryAlert(error: error?.localizedDescription, code: code) { (retry) in
+                    retry ? self.getCurrentLyric() : self.backHome()
+                }
+                self.present(alertController, animated: true, completion: nil)
+            } else if lyric == nil {
+                let alertController = getErrorWithRetryAlert(error: "Invalid lyric", code: code) { (retry) in
+                    retry ? self.getCurrentLyric() : self.backHome()
+                }
+                self.present(alertController, animated: true, completion: nil)
+            } else {
+                self.current_lyric = lyric
+                self.getCurrentAnswers()
+            }
         }
     }
     
     private func getCurrentAnswers(){
-        WhoSingsManager.sharedInstance.getRandomArtist(with: 3){ (artists, error, code) in
-            self.artist_list = artists!
-            self.updateView()
+        getRandomArtist(with: 3){ (artists, error, code) in
+            if error != nil{
+                let alertController = getErrorWithRetryAlert(error: error?.localizedDescription, code: code) { (retry) in
+                    retry ? self.getCurrentAnswers() : self.backHome()
+                }
+                self.present(alertController, animated: true, completion: nil)
+            } else if ((artists?.isEmpty) != nil){
+                let alertController = getErrorWithRetryAlert(error: "Invalid artist list", code: code) { (retry) in
+                    retry ? self.getCurrentAnswers() : self.backHome()
+                }
+                self.present(alertController, animated: true, completion: nil)
+            } else {
+                self.artist_list = artists!
+                self.updateView()
+            }
         }
     }
     
@@ -205,7 +243,7 @@ class QuizCardVC: DarkVC {
         if answer.artist_id == current_artist?.artist_id{
             // correct answer
             let points = (seconds > 10 ? 10 : seconds)
-            WhoSingsManager.sharedInstance.current_score = WhoSingsManager.sharedInstance.current_score + points
+            current_score = current_score + points
             lyricTextView.text = "Correct! \n\(points)p"
             button.layer.borderColor = UIColor.green.cgColor
         } else {
@@ -230,5 +268,10 @@ class QuizCardVC: DarkVC {
         answerAButton.isEnabled = bool
         answerBButton.isEnabled = bool
         answerCButton.isEnabled = bool
+    }
+    
+    private func backHome(){
+        current_score = 0
+        navigationController?.setViewControllers([HomeVC()], animated: true)
     }
 }

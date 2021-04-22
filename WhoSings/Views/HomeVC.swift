@@ -11,7 +11,7 @@ class HomeVC: DarkVC {
     
     let titleImage:UIImageView = createALImage(from: "appLogo")
     
-    let profileButton:UIButton = createALButton(type: .custom, title: WhoSingsManager.sharedInstance.player_name, font: .systemFont(ofSize: 24), image: UIImage(imageLiteralResourceName: "user"))
+    let profileButton:UIButton = createALButton(type: .custom, title: player_name, font: .systemFont(ofSize: 24), image: UIImage(imageLiteralResourceName: "user"))
     
     let newGameButton:UIButton = createBorderALButton(title: "New Game")
     let highScoresButton:UIButton = createBorderALButton(title: "High Scores")
@@ -64,9 +64,9 @@ class HomeVC: DarkVC {
     }
     
     @objc private func seeProfile(sender: UIButton!) {
-        if WhoSingsManager.sharedInstance.player_name == DEFAULT_PLAYER{
-            let alertController = WhoSingsManager.sharedInstance.getPlayerNameAlert { (player_name) in
-                self.profileButton.setTitle(player_name, for: .normal)
+        if player_name == DEFAULT_PLAYER{
+            let alertController = getPlayerNameAlert { (new_player_name) in
+                self.profileButton.setTitle(new_player_name, for: .normal)
                 self.navigationController?.pushViewController(ProfileVC(), animated: true)
             }
             present(alertController, animated: true, completion: nil)
@@ -76,8 +76,8 @@ class HomeVC: DarkVC {
     }
     
     @objc private func startGame(sender: UIButton!) {
-        let alertController = WhoSingsManager.sharedInstance.getPlayerNameAlert { (player_name) in
-            self.profileButton.setTitle(player_name, for: .normal)
+        let alertController = getPlayerNameAlert { (new_player_name) in
+            self.profileButton.setTitle(new_player_name, for: .normal)
             self.navigationController?.pushViewController(QuizCardVC(), animated: true)
         }
         present(alertController, animated: true, completion: nil)

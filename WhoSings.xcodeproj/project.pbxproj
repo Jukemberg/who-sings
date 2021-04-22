@@ -17,12 +17,14 @@
 		622331AE261A3873007344D9 /* QuizCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622331AD261A3873007344D9 /* QuizCardVC.swift */; };
 		622331B8261A67F4007344D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 622331B7261A67F4007344D9 /* LaunchScreen.storyboard */; };
 		622331BD261B4D58007344D9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622331BC261B4D58007344D9 /* Utils.swift */; };
+		623BFA0626317A8A000CFEA4 /* WhoSingsRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BFA0526317A8A000CFEA4 /* WhoSingsRealm.swift */; };
+		623BFA0A26317B5D000CFEA4 /* WhoSingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BFA0926317B5D000CFEA4 /* WhoSingsManager.swift */; };
 		62A69CEA261DBE75004AFA8C /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A69CE9261DBE75004AFA8C /* Score.swift */; };
 		62A69D01261DECB2004AFA8C /* HighScoresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A69D00261DECB2004AFA8C /* HighScoresVC.swift */; };
 		62A69D0C261DF08E004AFA8C /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A69D0B261DF08E004AFA8C /* ProfileVC.swift */; };
 		62CD7863261C563C00D5EBE3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CD7862261C563C00D5EBE3 /* HomeVC.swift */; };
 		62CD787A261DA71800D5EBE3 /* QuizEndVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CD7879261DA71800D5EBE3 /* QuizEndVC.swift */; };
-		62CFA0F026187A8000A19F12 /* WhoSingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CFA0EF26187A8000A19F12 /* WhoSingsManager.swift */; };
+		62CFA0F026187A8000A19F12 /* WhoSingsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CFA0EF26187A8000A19F12 /* WhoSingsAPI.swift */; };
 		F906D614745E2E3D25D8DAC9 /* Pods_WhoSings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CDCDBF7C79DE68365E961D /* Pods_WhoSings.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,12 +41,14 @@
 		622331AD261A3873007344D9 /* QuizCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCardVC.swift; sourceTree = "<group>"; };
 		622331B7261A67F4007344D9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		622331BC261B4D58007344D9 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		623BFA0526317A8A000CFEA4 /* WhoSingsRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoSingsRealm.swift; sourceTree = "<group>"; };
+		623BFA0926317B5D000CFEA4 /* WhoSingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoSingsManager.swift; sourceTree = "<group>"; };
 		62A69CE9261DBE75004AFA8C /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		62A69D00261DECB2004AFA8C /* HighScoresVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoresVC.swift; sourceTree = "<group>"; };
 		62A69D0B261DF08E004AFA8C /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		62CD7862261C563C00D5EBE3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		62CD7879261DA71800D5EBE3 /* QuizEndVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizEndVC.swift; sourceTree = "<group>"; };
-		62CFA0EF26187A8000A19F12 /* WhoSingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoSingsManager.swift; sourceTree = "<group>"; };
+		62CFA0EF26187A8000A19F12 /* WhoSingsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoSingsAPI.swift; sourceTree = "<group>"; };
 		86CDCDBF7C79DE68365E961D /* Pods_WhoSings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhoSings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66F2101F293529D3CCCE0BF /* Pods-WhoSings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoSings.debug.xcconfig"; path = "Target Support Files/Pods-WhoSings/Pods-WhoSings.debug.xcconfig"; sourceTree = "<group>"; };
 		FD3AAD96D04A3BD7A4855FB4 /* Pods-WhoSings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoSings.release.xcconfig"; path = "Target Support Files/Pods-WhoSings/Pods-WhoSings.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,7 +138,9 @@
 		62CFA0F326187A8F00A19F12 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				62CFA0EF26187A8000A19F12 /* WhoSingsManager.swift */,
+				623BFA0926317B5D000CFEA4 /* WhoSingsManager.swift */,
+				62CFA0EF26187A8000A19F12 /* WhoSingsAPI.swift */,
+				623BFA0526317A8A000CFEA4 /* WhoSingsRealm.swift */,
 				622331BC261B4D58007344D9 /* Utils.swift */,
 				62220ECE261875AC00388008 /* Info.plist */,
 			);
@@ -283,10 +289,12 @@
 				62A69D01261DECB2004AFA8C /* HighScoresVC.swift in Sources */,
 				622331A1261884B8007344D9 /* Lyric.swift in Sources */,
 				6223319B261882EF007344D9 /* Track.swift in Sources */,
-				62CFA0F026187A8000A19F12 /* WhoSingsManager.swift in Sources */,
+				623BFA0A26317B5D000CFEA4 /* WhoSingsManager.swift in Sources */,
+				62CFA0F026187A8000A19F12 /* WhoSingsAPI.swift in Sources */,
 				62A69CEA261DBE75004AFA8C /* Score.swift in Sources */,
 				622331AE261A3873007344D9 /* QuizCardVC.swift in Sources */,
 				62220EC1261875A800388008 /* AppDelegate.swift in Sources */,
+				623BFA0626317A8A000CFEA4 /* WhoSingsRealm.swift in Sources */,
 				62220EC3261875A800388008 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,7 @@ let LAST_SCORES = Bundle.main.object(forInfoDictionaryKey: "LAST_SCORES") as! In
 
 class ProfileVC: DarkVC {
     
-    let titleLabel:UILabel = createALLabel(text: WhoSingsManager.sharedInstance.player_name, font: .systemFont(ofSize: 36, weight: .regular), textAlign: .center)
+    let titleLabel:UILabel = createALLabel(text: player_name, font: .systemFont(ofSize: 36, weight: .regular), textAlign: .center)
     
     let scoresStackView:UIStackView = createALStackView(spacing: 16)
     
@@ -44,7 +44,7 @@ class ProfileVC: DarkVC {
     }
     
     private func createScoreSubViews(){
-        let playerScores = WhoSingsManager.sharedInstance.getPlayerScores(quantity: LAST_SCORES)
+        let playerScores = getPlayerScores(quantity: LAST_SCORES)
         if playerScores.isEmpty {
             let subView = createSubLabel(for: nil)
             scoresStackView.addArrangedSubview(subView)
@@ -92,7 +92,7 @@ class ProfileVC: DarkVC {
     }
     
     @objc private func logOut(sender: UIButton!) {
-        WhoSingsManager.sharedInstance.player_name = nil
+        player_name = nil
         navigationController?.setViewControllers([HomeVC()], animated: true)
     }
     

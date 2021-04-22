@@ -8,8 +8,6 @@
 import Foundation
 import UIKit
 
-// "Icon made by PixelPerfect from www.flaticon.com"
-
 class DarkVC: UIViewController {
     
     override func viewDidLoad() {
@@ -93,6 +91,34 @@ func createALSubView() -> UIView {
     return subView
 }
 
+func getPlayerNameAlert(completionHandler: @escaping (_ player_name:String?) -> ()) -> UIAlertController{
+    let alertController = UIAlertController(title: "What's your name?", message: "", preferredStyle: .alert)
+    alertController.addTextField { textField in
+        textField.placeholder = "Name"
+        textField.text = player_name
+        textField.keyboardType = .default
+    }
+    let confirmAction = UIAlertAction(title: "OK", style: .default) { [weak alertController] _ in
+        guard let alertController = alertController, let textField = alertController.textFields?.first else { return }
+        let new_player_name = textField.text
+        player_name = new_player_name
+        completionHandler(new_player_name)
+    }
+    let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+    alertController.addAction(confirmAction)
+    alertController.addAction(cancelAction)
+    return alertController
+}
+
+
+func getErrorWithRetryAlert(error:String?, code:Int?, completionHandler: @escaping (_ retry:Bool) -> ()) -> UIAlertController{
+    let alertController = UIAlertController(title: "An error as occurred \(code ?? 400)", message: error, preferredStyle: .alert)
+    let confirmAction = UIAlertAction(title: "Retry", style: .default) { _ in completionHandler(true) }
+    let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { _ in completionHandler(false) }
+    alertController.addAction(confirmAction)
+    alertController.addAction(cancelAction)
+    return alertController
+}
 
 public func delay(bySeconds seconds: Double, dispatchLevel: DispatchLevel = .main, closure: @escaping () -> Void) {
     let dispatchTime = DispatchTime.now() + seconds

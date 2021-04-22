@@ -11,7 +11,7 @@ class QuizEndVC: DarkVC {
     
     let titleLabel:UILabel = createALLabel(text: "End of the Quiz!", font: .systemFont(ofSize: 36, weight: .regular), textAlign: .center)
     
-    let scoreLabel:UILabel = createALLabel(text: "\(WhoSingsManager.sharedInstance.current_score)", font: .systemFont(ofSize: 42, weight: .semibold), textAlign: .center)
+    let scoreLabel:UILabel = createALLabel(text: "\(current_score)", font: .systemFont(ofSize: 42, weight: .semibold), textAlign: .center)
     
     let playAgainButton:UIButton = createBorderALButton(title: "Play Again")
     let backHomeButton:UIButton = createBorderALButton(title: "Back to menu")
@@ -64,12 +64,12 @@ class QuizEndVC: DarkVC {
     }
     
     @objc private func playAgain(sender: UIButton!) {
-        WhoSingsManager.sharedInstance.saveAndClearScore()
+       saveAndClearScore()
         navigationController?.setViewControllers([QuizCardVC()], animated: true)
      }
     
     @objc private func backHome(sender: UIButton!) {
-        WhoSingsManager.sharedInstance.saveAndClearScore()
+        saveAndClearScore()
         navigationController?.setViewControllers([HomeVC()], animated: true)
      }
     
